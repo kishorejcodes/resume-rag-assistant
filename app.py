@@ -10,8 +10,8 @@ from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
 
 # FIXED: Updated modern chain imports
-from langchain.chains.retrieval import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 
 # 1. Load the PDF directly using pypdf
 reader = PdfReader(r"C:\Users\kisho\OneDrive\Desktop\KishorKumarJ_DA4_5Yrs.pdf")
